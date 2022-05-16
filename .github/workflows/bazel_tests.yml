@@ -16,4 +16,4 @@ jobs:
           os: 'linux'
 
       - name: run-buildifier-diff
-        run: bazel run //tests:buildifier_format_diff
+        run: bazel run //:buildifier_format_diff
