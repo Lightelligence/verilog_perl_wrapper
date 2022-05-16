@@ -1,0 +1,1 @@
+workspace(name = "verilog_perl_wrapper")
