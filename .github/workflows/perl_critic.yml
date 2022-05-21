@@ -1,4 +1,12 @@
-- name: Perl Critic
-  uses: Difegue/action-perlcritic@v2
-  with:
-    args: --brutal ./*.pl
+name: Perl Critic
+on: [push]
+jobs:
+  perl-critic:
+    name: Perl Critic Check
+    runs-on: ubunt-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Run Perl Critic checks
+        uses: Difegue/action-perlcritic@v2
+        with:
+          args: --brutal ./*.pl
