@@ -1,4 +1,4 @@
 - name: Perl Critic
-      uses: Difegue/action-perlcritic@v2
-      with:
-          args: --brutal ./*.pl
+  uses: Difegue/action-perlcritic@v2
+  with:
+    args: --brutal ./*.pl
