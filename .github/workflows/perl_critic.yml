@@ -3,7 +3,7 @@ on: [push]
 jobs:
   perl-critic:
     name: Perl Critic Check
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
       - name: Run Perl Critic checks
